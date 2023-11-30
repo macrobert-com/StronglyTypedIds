@@ -5,23 +5,25 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E05FF9C0-39AB-4068-8551-F8BEE0B1DEB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacRobert.AspNetCore.StronglyTypeIds", "src\MacRobert.AspNetCore.StronglyTypeIds\MacRobert.AspNetCore.StronglyTypeIds.csproj", "{F64C200C-9D88-4E86-A9D0-1B63A6EAF374}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacRobert.AspNetCore.StronglyTypeIds", "src\MacRobert.AspNetCore.StronglyTypeIds\MacRobert.AspNetCore.StronglyTypeIds.csproj", "{F64C200C-9D88-4E86-A9D0-1B63A6EAF374}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MacRobert.EntityFrameworkCore.StronglyTypeIds", "src\MacRobert.EntityFrameworkCore.StronglyTypeIds\MacRobert.EntityFrameworkCore.StronglyTypeIds.csproj", "{480E4B35-E013-4BEE-99FA-921175C60678}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacRobert.EntityFrameworkCore.StronglyTypeIds", "src\MacRobert.EntityFrameworkCore.StronglyTypeIds\MacRobert.EntityFrameworkCore.StronglyTypeIds.csproj", "{480E4B35-E013-4BEE-99FA-921175C60678}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6BD7265F-BB7E-4BD7-9D28-CC7C93DFBC0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.MacRobert.AspNetCore.StronglyTypeIds", "test\Test.MacRobert.AspNetCore.StronglyTypeIds\Test.MacRobert.AspNetCore.StronglyTypeIds.csproj", "{E2F7F7BA-899E-4D16-BAA0-34D5F87EF382}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.MacRobert.AspNetCore.StronglyTypeIds", "test\Test.MacRobert.AspNetCore.StronglyTypeIds\Test.MacRobert.AspNetCore.StronglyTypeIds.csproj", "{E2F7F7BA-899E-4D16-BAA0-34D5F87EF382}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.MacRobert.EntityFrameworkCore.StronglyTypeIds", "test\Test.MacRobert.EntityFrameworkCore.StronglyTypeIds\Test.MacRobert.EntityFrameworkCore.StronglyTypeIds.csproj", "{A2801201-F7CA-4914-A666-9EDB779FE059}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.MacRobert.EntityFrameworkCore.StronglyTypeIds", "test\Test.MacRobert.EntityFrameworkCore.StronglyTypeIds\Test.MacRobert.EntityFrameworkCore.StronglyTypeIds.csproj", "{A2801201-F7CA-4914-A666-9EDB779FE059}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1F6232DF-A171-40B6-A7E4-ADF240746F50}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F64C200C-9D88-4E86-A9D0-1B63A6EAF374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -40,6 +42,9 @@ Global
 		{A2801201-F7CA-4914-A666-9EDB779FE059}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2801201-F7CA-4914-A666-9EDB779FE059}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2801201-F7CA-4914-A666-9EDB779FE059}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F64C200C-9D88-4E86-A9D0-1B63A6EAF374} = {E05FF9C0-39AB-4068-8551-F8BEE0B1DEB0}
