@@ -1,4 +1,4 @@
-namespace Test.MacRobert.com.EntityFrameworkCore.StronglyTypeIds;
+namespace Test.MacRobert.AspNetCore.StronglyTypeIds;
 
 public class UnitTest1
 {

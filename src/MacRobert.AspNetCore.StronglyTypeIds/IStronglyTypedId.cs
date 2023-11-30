@@ -1,4 +1,4 @@
-﻿namespace MacRobert.com.AspNetCore.StronglyTypeIds;
+﻿namespace MacRobert.AspNetCore.StronglyTypeIds;
 
 public interface IStronglyTypedId<T>
 {
