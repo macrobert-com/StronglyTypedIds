@@ -1,0 +1,14 @@
+<Project>
+  <PropertyGroup>
+    <!-- Might need to downgrade to net6.0 for iOS support -->
+    <!-- or the target framework you're using -->
+    <TargetFramework>net8.0</TargetFramework>
+    <Version>1.0.1</Version>
+    <!-- Common Project tags-->
+    <Authors>Martin MacRobert</Authors>
+    <Company>MacRobert.com</Company>
+    <Copyright>Copyright &#xA9; $(Year) MacRobert.com</Copyright>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+</Project>
