@@ -1,9 +1,28 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MacRobert.StronglyTypeIds" Version="1.0.1" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <!-- NuGet properties -->
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>MacRobert.AspNetCore.StronglyTypeIds</PackageId>
+    <PackageDescription>Utilities for creating strongly typed ids in AspNetCore applications</PackageDescription>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <!-- Push Release Builds to the local Nuget Server defined in Nuget.config -->
+  <Target Name="PushToNuGet" AfterTargets="Pack" Condition="'$(Configuration)'=='Release'">
+    <Exec Command="dotnet nuget push  $(PackageOutputPath)$(PackageId).$(Version).nupkg --source https://api.nuget.org/v3/index.json --api-key $(MACROBERT_NUGET_API_KEY)" />
+    <Exec Command="dotnet nuget push $(PackageOutputPath)$(PackageId).$(Version).snupkg --source https://api.nuget.org/v3/index.json --api-key $(MACROBERT_NUGET_API_KEY)" />
+  </Target>  
 
 </Project>
