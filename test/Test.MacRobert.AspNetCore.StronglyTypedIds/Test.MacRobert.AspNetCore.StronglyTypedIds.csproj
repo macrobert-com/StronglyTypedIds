@@ -24,8 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\MacRobert.AspNetCore.StronglyTypeIds\MacRobert.AspNetCore.StronglyTypeIds.csproj" />
-    <ProjectReference Include="..\..\src\MacRobert.StronglyTypeIds\MacRobert.StronglyTypeIds.csproj" />
+    <ProjectReference Include="..\..\src\MacRobert.AspNetCore.StronglyTypedIds\MacRobert.AspNetCore.StronglyTypedIds.csproj" />
+    <ProjectReference Include="..\..\src\MacRobert.StronglyTypedIds\MacRobert.StronglyTypedIds.csproj" />
   </ItemGroup>
 
 </Project>

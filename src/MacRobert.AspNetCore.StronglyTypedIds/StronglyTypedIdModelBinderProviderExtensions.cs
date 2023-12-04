@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace MacRobert.AspNetCore.StronglyTypeIds;
+namespace MacRobert.AspNetCore.StronglyTypedIds;
 
 public static class StronglyTypedIdModelBinderProviderExtensions
 {

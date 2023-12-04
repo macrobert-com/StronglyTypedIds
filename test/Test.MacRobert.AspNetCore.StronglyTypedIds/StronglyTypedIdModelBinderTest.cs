@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc.Abstractions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using MacRobert.AspNetCore.StronglyTypeIds;
+using MacRobert.AspNetCore.StronglyTypedIds;
 
 namespace Test.MacRobert.AspNetCore.StronglyTypeIds;
 

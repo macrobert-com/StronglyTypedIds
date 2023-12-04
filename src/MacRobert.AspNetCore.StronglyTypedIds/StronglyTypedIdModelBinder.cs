@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.ComponentModel;
 
-namespace MacRobert.AspNetCore.StronglyTypeIds;
+namespace MacRobert.AspNetCore.StronglyTypedIds;
 
 public class StronglyTypedIdModelBinder<T> : IModelBinder
 {
@@ -10,7 +10,7 @@ public class StronglyTypedIdModelBinder<T> : IModelBinder
         var modelName = bindingContext.ModelName;
         var valueProviderResult = bindingContext.ValueProvider.GetValue(modelName);
 
-        if (valueProviderResult == ValueProviderResult.None || 
+        if (valueProviderResult == ValueProviderResult.None ||
             string.IsNullOrEmpty(valueProviderResult.FirstValue))
         {
             return Task.CompletedTask;

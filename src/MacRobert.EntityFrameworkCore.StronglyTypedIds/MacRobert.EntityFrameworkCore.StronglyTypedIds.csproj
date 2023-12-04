@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MacRobert.Reflection" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MacRobert.Reflection\MacRobert.Reflection.csproj" />
+    <ProjectReference Include="..\MacRobert.StronglyTypedIds\MacRobert.StronglyTypedIds.csproj" />
+  </ItemGroup>
+
+</Project>
