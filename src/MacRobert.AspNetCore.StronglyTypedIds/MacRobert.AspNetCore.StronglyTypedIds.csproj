@@ -7,14 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MacRobert.StronglyTypedIds" Version="1.0.3" />
+    <PackageReference Include="MacRobert.StronglyTypedIds" Version="1.0.5" />
   </ItemGroup>
 
   <PropertyGroup>
     <!-- NuGet properties -->
     <IsPackable>true</IsPackable>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>MacRobert.AspNetCore.StronglyTypeIds</PackageId>
+    <PackageId>MacRobert.AspNetCore.StronglyTypedIds</PackageId>
     <PackageDescription>Utilities for creating strongly typed ids in AspNetCore applications</PackageDescription>
     <OutputType>Library</OutputType>
   </PropertyGroup>
