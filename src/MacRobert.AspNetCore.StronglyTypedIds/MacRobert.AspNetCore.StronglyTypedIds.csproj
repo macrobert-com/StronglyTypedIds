@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MacRobert.StronglyTypeIds" Version="1.0.1" />
+    <PackageReference Include="MacRobert.StronglyTypedIds" Version="1.0.3" />
   </ItemGroup>
 
   <PropertyGroup>
