@@ -9,7 +9,7 @@
   <PropertyGroup>
     <!-- NuGet properties -->
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>MacRobert.StronglyTypeIds</PackageId>
+    <PackageId>MacRobert.StronglyTypedIds</PackageId>
     <PackageDescription>Utilities for creating strongly typed ids</PackageDescription>
   </PropertyGroup>
 
