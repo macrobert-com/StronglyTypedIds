@@ -3,7 +3,7 @@
     <!-- Might need to downgrade to net6.0 for iOS support -->
     <!-- or the target framework you're using -->
     <TargetFramework>net8.0</TargetFramework>
-    <Version>1.0.3</Version>
+    <Version>1.0.5</Version>
     <!-- Common Project tags-->
     <Authors>Martin MacRobert</Authors>
     <Company>MacRobert.com</Company>
@@ -13,4 +13,18 @@
     <projectUrl>https://github.com/macrobert-com/StronglyTypedIds</projectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageSource Condition="'$(NUGET_PACKAGE_SOURCE)'=='nuget.org'">https://api.nuget.org/v3/index.json</PackageSource>
+    <PackageSource Condition="'$(NUGET_PACKAGE_SOURCE)'=='local'">$(NUGET_LOCAL_FEED)</PackageSource>
+    <ApiKey Condition="'$(NUGET_PACKAGE_SOURCE)'=='nuget.org'">$(MACROBERT_NUGET_API_KEY)</ApiKey>
+    <ApiKey Condition="'$(NUGET_PACKAGE_SOURCE)'=='local'">$(NUGET_API_KEY)</ApiKey>
+  </PropertyGroup>
+
+  <!-- Push Release Builds to the local Nuget Server defined in Nuget.config -->
+  <Target Name="PushToNuGet" AfterTargets="Pack" Condition="'$(Configuration)'=='Release'">
+    <Exec Command="dotnet nuget push  $(PackageOutputPath)$(PackageId).$(Version).nupkg --source $(PackageSource) --api-key $(ApiKey)" />
+    <Exec Command="dotnet nuget push $(PackageOutputPath)$(PackageId).$(Version).snupkg --source $(PackageSource) --api-key $(ApiKey)" />
+  </Target>
+  
 </Project>
