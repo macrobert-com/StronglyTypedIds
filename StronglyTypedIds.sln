@@ -5,20 +5,24 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E05FF9C0-39AB-4068-8551-F8BEE0B1DEB0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacRobert.AspNetCore.StronglyTypeIds", "src\MacRobert.AspNetCore.StronglyTypeIds\MacRobert.AspNetCore.StronglyTypeIds.csproj", "{F64C200C-9D88-4E86-A9D0-1B63A6EAF374}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacRobert.AspNetCore.StronglyTypedIds", "src\MacRobert.AspNetCore.StronglyTypedIds\MacRobert.AspNetCore.StronglyTypedIds.csproj", "{F64C200C-9D88-4E86-A9D0-1B63A6EAF374}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacRobert.EntityFrameworkCore.StronglyTypeIds", "src\MacRobert.EntityFrameworkCore.StronglyTypeIds\MacRobert.EntityFrameworkCore.StronglyTypeIds.csproj", "{480E4B35-E013-4BEE-99FA-921175C60678}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacRobert.EntityFrameworkCore.StronglyTypedIds", "src\MacRobert.EntityFrameworkCore.StronglyTypedIds\MacRobert.EntityFrameworkCore.StronglyTypedIds.csproj", "{480E4B35-E013-4BEE-99FA-921175C60678}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6BD7265F-BB7E-4BD7-9D28-CC7C93DFBC0A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.MacRobert.AspNetCore.StronglyTypeIds", "test\Test.MacRobert.AspNetCore.StronglyTypeIds\Test.MacRobert.AspNetCore.StronglyTypeIds.csproj", "{E2F7F7BA-899E-4D16-BAA0-34D5F87EF382}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.MacRobert.AspNetCore.StronglyTypedIds", "test\Test.MacRobert.AspNetCore.StronglyTypedIds\Test.MacRobert.AspNetCore.StronglyTypedIds.csproj", "{E2F7F7BA-899E-4D16-BAA0-34D5F87EF382}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.MacRobert.EntityFrameworkCore.StronglyTypeIds", "test\Test.MacRobert.EntityFrameworkCore.StronglyTypeIds\Test.MacRobert.EntityFrameworkCore.StronglyTypeIds.csproj", "{A2801201-F7CA-4914-A666-9EDB779FE059}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.MacRobert.EntityFrameworkCore.StronglyTypedIds", "test\Test.MacRobert.EntityFrameworkCore.StronglyTypedIds\Test.MacRobert.EntityFrameworkCore.StronglyTypedIds.csproj", "{A2801201-F7CA-4914-A666-9EDB779FE059}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1F6232DF-A171-40B6-A7E4-ADF240746F50}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacRobert.StronglyTypedIds", "src\MacRobert.StronglyTypedIds\MacRobert.StronglyTypedIds.csproj", "{549298AA-5995-43FB-B284-D4CB381C84F7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MacRobert.Reflection", "src\MacRobert.Reflection\MacRobert.Reflection.csproj", "{521C6BD5-1D38-4244-8FC0-A753F56305A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +46,14 @@ Global
 		{A2801201-F7CA-4914-A666-9EDB779FE059}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2801201-F7CA-4914-A666-9EDB779FE059}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2801201-F7CA-4914-A666-9EDB779FE059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{549298AA-5995-43FB-B284-D4CB381C84F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{549298AA-5995-43FB-B284-D4CB381C84F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{549298AA-5995-43FB-B284-D4CB381C84F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{549298AA-5995-43FB-B284-D4CB381C84F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{521C6BD5-1D38-4244-8FC0-A753F56305A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{521C6BD5-1D38-4244-8FC0-A753F56305A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{521C6BD5-1D38-4244-8FC0-A753F56305A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{521C6BD5-1D38-4244-8FC0-A753F56305A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,5 +63,10 @@ Global
 		{480E4B35-E013-4BEE-99FA-921175C60678} = {E05FF9C0-39AB-4068-8551-F8BEE0B1DEB0}
 		{E2F7F7BA-899E-4D16-BAA0-34D5F87EF382} = {6BD7265F-BB7E-4BD7-9D28-CC7C93DFBC0A}
 		{A2801201-F7CA-4914-A666-9EDB779FE059} = {6BD7265F-BB7E-4BD7-9D28-CC7C93DFBC0A}
+		{549298AA-5995-43FB-B284-D4CB381C84F7} = {E05FF9C0-39AB-4068-8551-F8BEE0B1DEB0}
+		{521C6BD5-1D38-4244-8FC0-A753F56305A7} = {E05FF9C0-39AB-4068-8551-F8BEE0B1DEB0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81B5EADC-1AC8-4874-AD92-297600B9107A}
 	EndGlobalSection
 EndGlobal
