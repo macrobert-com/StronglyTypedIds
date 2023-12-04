@@ -19,10 +19,4 @@
     <OutputType>Library</OutputType>
   </PropertyGroup>
 
-  <!-- Push Release Builds to the local Nuget Server defined in Nuget.config -->
-  <Target Name="PushToNuGet" AfterTargets="Pack" Condition="'$(Configuration)'=='Release'">
-    <Exec Command="dotnet nuget push  $(PackageOutputPath)$(PackageId).$(Version).nupkg --source https://api.nuget.org/v3/index.json --api-key $(MACROBERT_NUGET_API_KEY)" />
-    <Exec Command="dotnet nuget push $(PackageOutputPath)$(PackageId).$(Version).snupkg --source https://api.nuget.org/v3/index.json --api-key $(MACROBERT_NUGET_API_KEY)" />
-  </Target>  
-
 </Project>
