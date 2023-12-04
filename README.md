@@ -23,6 +23,6 @@ In the example above the ```OrderId``` is clearly associated with an Order (by C
 
 - Domain Constraints: Strongly Typed IDs can enforce domain constraints. For example, if an ID should always be positive, that can be enforced in the type itself.
 
-- Encapsulation: You can change the ID's internal representation without affecting the rest of the code3.
+- Encapsulation: You can change the ID's internal representation without affecting the rest of the code.
 
 The use of Strongly Typed IDs aligns well with the principles of Domain-Driven Design, where creating a rich, type-safe model of the domain is a key goal.
