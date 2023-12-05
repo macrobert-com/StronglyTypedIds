@@ -14,6 +14,7 @@ To avoid these issues, a Strongly Typed ID wraps the ID in a custom type specifi
 public record OrderId(Ulid Value) : IStronglyTypedId<Ulid>;
 ```
 In the example above the ```OrderId``` is clearly associated with an Order (by Convention) and is passed around or compared like any other value-type.
+Note also that because the ```OrderId``` is declared using the C# ```record``` type it also benefits from the value-comparison semantics associated with records.
 
 ## Benefits of Using Strongly Typed IDs
 
