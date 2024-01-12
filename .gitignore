@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/test/Test.MacRobert.AspNetCore.StronglyTypedIds/Properties/launchSettings.json
+/src/MacRobert.AspNetCore.StronglyTypedIds/Properties/launchSettings.json
+/src/MacRobert.EntityFrameworkCore.StronglyTypedIds/Properties/launchSettings.json
