@@ -1,23 +1,16 @@
 <Project>
   <PropertyGroup>
-    <!-- Might need to downgrade to net6.0 for iOS support -->
-    <!-- or the target framework you're using -->
-    <TargetFramework>net8.0</TargetFramework>
-    <Version>1.0.5</Version>
+    <Version>$(MACROBERT_LIB_VERSION)</Version>
     <!-- Common Project tags-->
     <Authors>Martin MacRobert</Authors>
     <Company>MacRobert.com</Company>
     <Copyright>Copyright &#xA9; $(Year) MacRobert.com</Copyright>
-    <IncludeSymbols>True</IncludeSymbols>
-    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <projectUrl>https://github.com/macrobert-com/StronglyTypedIds</projectUrl>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup>
     <PackageSource Condition="'$(NUGET_PACKAGE_SOURCE)'=='nuget.org'">https://api.nuget.org/v3/index.json</PackageSource>
-    <PackageSource Condition="'$(NUGET_PACKAGE_SOURCE)'=='local'">$(NUGET_LOCAL_FEED)</PackageSource>
     <ApiKey Condition="'$(NUGET_PACKAGE_SOURCE)'=='nuget.org'">$(MACROBERT_NUGET_API_KEY)</ApiKey>
+    <PackageSource Condition="'$(NUGET_PACKAGE_SOURCE)'=='local'">$(NUGET_LOCAL_FEED)</PackageSource>
     <ApiKey Condition="'$(NUGET_PACKAGE_SOURCE)'=='local'">$(NUGET_API_KEY)</ApiKey>
   </PropertyGroup>
 

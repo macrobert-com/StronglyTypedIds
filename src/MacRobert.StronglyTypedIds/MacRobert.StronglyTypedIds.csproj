@@ -7,10 +7,23 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <!-- NuGet properties -->
+    <!-- Specific NuGet properties -->
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>MacRobert.StronglyTypedIds</PackageId>
     <PackageDescription>Utilities for creating strongly typed ids</PackageDescription>
+    <RepositoryUrl>https://github.com/macrobert-com/StronglyTypedIds</RepositoryUrl>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- Generic NuGet properties -->
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../../icon.png" Pack="true" PackagePath="\"/>
+  </ItemGroup>
 
 </Project>
