@@ -11,7 +11,7 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>MacRobert.StronglyTypedIds</PackageId>
     <PackageDescription>Utilities for creating strongly typed ids</PackageDescription>
-    <RepositoryUrl>https://github.com/macrobert-com/StronglyTypedIds</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/macrobert-com/StronglyTypedIds</PackageProjectUrl>
   </PropertyGroup>
 
   <PropertyGroup>

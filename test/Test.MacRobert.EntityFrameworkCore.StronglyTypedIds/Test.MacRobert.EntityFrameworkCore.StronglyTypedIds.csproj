@@ -23,9 +23,19 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\MacRobert.EntityFrameworkCore.StronglyTypedIds\MacRobert.EntityFrameworkCore.StronglyTypedIds.csproj" />
+  <ItemGroup Condition="'$(Configuration)'=='Debug'">
     <ProjectReference Include="..\..\src\MacRobert.StronglyTypedIds\MacRobert.StronglyTypedIds.csproj" />
+    <ProjectReference Include="..\..\src\MacRobert.EntityFrameworkCore.StronglyTypedIds\MacRobert.EntityFrameworkCore.StronglyTypedIds.csproj" />
+    <ProjectReference Include="..\..\src\MacRobert.EntityFrameworkCore.StronglyTypedIds.Ulid\MacRobert.EntityFrameworkCore.StronglyTypedIds.Ulid.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(Configuration)'=='Release'">
+    <PackageReference Include="MacRobert.StronglyTypedIds" Version="1.0.8" />
+    <PackageReference Include="MacRobert.EntityFrameworkCore.StronglyTypedIds" Version="1.0.8" />
+    <PackageReference Include="MacRobert.EntityFrameworkCore.StronglyTypedIds.Ulid" Version="1.0.8" />
+  </ItemGroup>
+
+  <ItemGroup>
   </ItemGroup>
 
 </Project>

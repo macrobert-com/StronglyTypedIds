@@ -1,6 +1,5 @@
 using MacRobert.EntityFrameworkCore.StronglyTypedIds.ValueConversion;
 using MacRobert.StronglyTypeIds;
-using System.ComponentModel.Design;
 
 namespace Test.MacRobert.EntityFrameworkCore.StronglyTypeIds;
 
@@ -37,5 +36,17 @@ public class StronglyTypedIdValueConversionTest
 
         Assert.Equal(sourceValue, providerValue);
         Assert.Equal(referenceIdValue, stronglyTypedIdValue);
+    }
+
+    [Fact]
+    public void CanConvert_StronglyTypedUlid_To_Guid()
+    {
+        var referenceIdValue = new CompanyId(TestUlid);
+        var converter = new StronglyTypedUlidToGuidValueConverter<CompanyId>();
+        var providerGuid = (Guid)converter.ConvertToProvider(referenceIdValue)!;
+        Assert.Equal("018c3372-a60c-9bc8-d997-bae3dd715943", providerGuid.ToString());
+
+        var testValue = (CompanyId)converter.ConvertFromProvider(providerGuid)!;
+        Assert.Equal(referenceIdValue, testValue);
     }
 }
