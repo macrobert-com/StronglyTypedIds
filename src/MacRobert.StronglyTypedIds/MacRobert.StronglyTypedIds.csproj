@@ -8,7 +8,6 @@
 
   <PropertyGroup>
     <!-- Specific NuGet properties -->
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageId>MacRobert.StronglyTypedIds</PackageId>
     <PackageDescription>Utilities for creating strongly typed ids</PackageDescription>
     <PackageProjectUrl>https://github.com/macrobert-com/StronglyTypedIds</PackageProjectUrl>

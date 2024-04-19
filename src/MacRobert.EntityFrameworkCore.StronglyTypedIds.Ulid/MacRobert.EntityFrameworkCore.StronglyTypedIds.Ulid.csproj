@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup Condition="'$(Configuration)'=='Release'">
-    <PackageReference Include="MacRobert.StronglyTypedIds" Version="1.0.8" />
-    <PackageReference Include="MacRobert.EntityFrameworkCore.StronglyTypedIds" Version="1.0.8" />
+    <PackageReference Include="MacRobert.StronglyTypedIds" Version="$(Version)" />
+    <PackageReference Include="MacRobert.EntityFrameworkCore.StronglyTypedIds" Version="$(Version)" />
   </ItemGroup>  
 
   <PropertyGroup>
@@ -32,7 +32,6 @@
   <PropertyGroup>
     <!-- Generic NuGet properties -->
     <IsPackable>true</IsPackable>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
