@@ -10,10 +10,6 @@
   <PropertyGroup>
     <PackageProjectUrl>https://github.com/macrobert-com/StronglyTypedIds</PackageProjectUrl>
     <RepositoryUrl>$(PackageProjectUrl)</RepositoryUrl>
-    <PackageSource Condition="'$(NUGET_PACKAGE_SOURCE)'=='nuget.org'">https://api.nuget.org/v3/index.json</PackageSource>
-    <ApiKey Condition="'$(NUGET_PACKAGE_SOURCE)'=='nuget.org'">$(MACROBERT_NUGET_API_KEY)</ApiKey>
-    <PackageSource Condition="'$(NUGET_PACKAGE_SOURCE)'=='local'">$(NUGET_LOCAL_FEED)</PackageSource>
-    <ApiKey Condition="'$(NUGET_PACKAGE_SOURCE)'=='local'">$(NUGET_API_KEY)</ApiKey>
   </PropertyGroup>
   
 </Project>

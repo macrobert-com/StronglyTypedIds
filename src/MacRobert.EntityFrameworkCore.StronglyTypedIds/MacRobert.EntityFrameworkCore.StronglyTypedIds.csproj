@@ -12,12 +12,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.*" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(Configuration)'=='Debug'">
+  <ItemGroup>
     <ProjectReference Include="..\MacRobert.StronglyTypedIds\MacRobert.StronglyTypedIds.csproj" />
-  </ItemGroup>  
-
-  <ItemGroup Condition="'$(Configuration)'=='Release'">
-    <PackageReference Include="MacRobert.StronglyTypedIds" Version="$(Version)" />
   </ItemGroup>
   
   <PropertyGroup>

@@ -12,15 +12,10 @@
     <PackageReference Include="Ulid" Version="1.3.3" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(Configuration)'=='Debug'">
+  <ItemGroup>
     <ProjectReference Include="..\MacRobert.StronglyTypedIds\MacRobert.StronglyTypedIds.csproj" />
     <ProjectReference Include="..\MacRobert.EntityFrameworkCore.StronglyTypedIds\MacRobert.EntityFrameworkCore.StronglyTypedIds.csproj" />
   </ItemGroup>
-
-  <ItemGroup Condition="'$(Configuration)'=='Release'">
-    <PackageReference Include="MacRobert.StronglyTypedIds" Version="$(Version)" />
-    <PackageReference Include="MacRobert.EntityFrameworkCore.StronglyTypedIds" Version="$(Version)" />
-  </ItemGroup>  
 
   <PropertyGroup>
     <!-- NuGet properties -->
